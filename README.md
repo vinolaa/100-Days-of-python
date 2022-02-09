@@ -1,2 +1,2 @@
 # 100-Days-of-python
-Repository created to upload 100 projects of the course "100 Days of Code - Python"
+Here you will see the 100 projects that i will post every day
