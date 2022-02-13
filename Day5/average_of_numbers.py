@@ -7,3 +7,4 @@ for a in student_heights:
     heights_sum += a
 media = round(heights_sum / (n + 1))
 print(media)
+
