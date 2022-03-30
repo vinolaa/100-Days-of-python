@@ -38,7 +38,7 @@ def calc_change(client, price):
     return round(change_value, 2)
 
 
-def accept_coffe(ingredients):
+def accept_coffee(ingredients):
     for item in ingredients:
         if ingredients[item] >= resources[item]:
             print(f"Sorry there is not enough {item}. Money refounded.")
@@ -78,16 +78,16 @@ while on:
     elif i == "report":
         report_print()
     else:
-        coffe = MENU[i]
+        coffee = MENU[i]
         client_coins_total = insert_coins()
-        coffe_price = coffe["cost"]
-        change = calc_change(client_coins_total, coffe_price)
+        coffee_price = coffee["cost"]
+        change = calc_change(client_coins_total, coffee_price)
         if change < 0:
             print("Sorry, that's not enough money. Coins refounded.")
             on = False
         else:
             print(f"Here is ${change} in change.")
 
-        if accept_coffe(coffe["ingredients"]):
+        if accept_coffee(coffe["ingredients"]):
             machine_money += coffe["cost"]
             make_coffee(i, coffe["ingredients"])
